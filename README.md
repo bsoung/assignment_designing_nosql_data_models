@@ -123,10 +123,10 @@ Advanced:
   * revenue: Array
     * Quarterly or monthly or yearly revenues
   * inventory: Array
-     * of ProductSchema instances
+     * of Products
   * name: string
   * transactions: Array
-    * of ReceiptSchema instances
+    * of Receipts
   * timestamp: date
 
 ## Receipt
@@ -134,3 +134,36 @@ Advanced:
   * product: ProductSchema
   * transactionID: string
   * timestamp: date
+
+2.
+
+## Feed
+	* user: UserSchema
+	
+
+## User
+	* firstName: String 
+	* lastName: String
+	* email: String
+	* profilePicture: String
+	* password: String
+	* friends: Array
+		* An array of Users
+	* activities: Array
+		* An array of Posts
+	* interactions: Array
+		* An array interaction objects
+
+## Post (activity)
+	* user: UserSchema
+	* title: String
+	* text: String
+	* image: String
+	* timestamp: Date
+
+
+
+
+
+
+
