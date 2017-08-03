@@ -46,6 +46,7 @@ Intermediate
   * restaurant: RestaurantSchema
   * reservationID: String (unique)
   * guests: Array
+  	* An array of Users
   * reservationTime: Date
   * timestamp: Date
 
@@ -54,13 +55,16 @@ Intermediate
   * password: String
   * email: String (unique)
   * favorites: Array
+  	* An array of Restaurants
   * phoneNumber: Integer
   * friends: Array
+  	* An array of Users
   * timestamp: Date
 
 ## Restaurant
   * name: String (unique)
   * tables: Array
+  	* an array of information from restaurant api
   * city: String
   * state: String
   * country: String
