@@ -43,35 +43,32 @@ Intermediate
 
 ## Reservation
   * user: UserSchema
-  * reservationID: string
   * restaurant: RestaurantSchema
+  * reservationID: String (unique)
   * guests: Array
   * reservationTime: Date
   * timestamp: Date
 
 ## User
-  * name: string
-  * password: string
-  * email: string
+  * name: String (unique)
+  * password: String
+  * email: String (unique)
   * favorites: Array
   * phoneNumber: Integer
   * friends: Array
-  * timestamp: date
+  * timestamp: Date
 
 ## Restaurant
-
-  * name
+  * name: String (unique)
   * tables: Array
-  * location {
-    * City: String
-    * State: string
-    * Country: string
-    }
+  * city: String
+  * state: String
+  * country: String
   * rating: Integer
   * price: Integer
   * reviews: Array
   * timestamp: Date
-  
+
 2.
 
 ## Student
@@ -87,14 +84,14 @@ Intermediate
   * timestamp: date
 
 ## Class
+  * class: ClassSchema
   * student: StudentSchema
+  * exam: ExamSchema
 	* subject: String
-	* examGrades: Array
-		* An array of Exams
   * timestamp: date
 
-
 ## Semester
+  * class: ClassSchema
 	* term: Integer
 	* classes: Array
 		* An array of Classes
