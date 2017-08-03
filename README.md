@@ -7,7 +7,7 @@ Basics
 1.
 
 ## User
-
+* profile: ProfileSchema
 * username: String
   * Must contain only word characters
 * password: String
@@ -17,8 +17,6 @@ Basics
 * timestamp
 
 ## Profile
-
-* user: UserSchema
 * aboutMe: string
 * birthday: date type
   * Must be of type Date
@@ -73,8 +71,7 @@ Intermediate
   * price: Integer
   * reviews: Array
   * timestamp: Date
-
-
+  
 2.
 
 ## Student
@@ -90,11 +87,10 @@ Intermediate
   * timestamp: date
 
 ## Class
+  * student: StudentSchema
 	* subject: String
 	* examGrades: Array
 		* An array of Exams
-  * exam: ExamSchema
-  * student: StudentSchema
   * timestamp: date
 
 
