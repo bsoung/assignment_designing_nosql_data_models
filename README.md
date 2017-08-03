@@ -75,28 +75,62 @@ Intermediate
   * timestamp: Date
 
 
-2. 
+2.
 
 ## Student
 	* name: String
 	* password: String
 	* email
 	* address
+  * timestamp: date
 
 ## Exam
 	* student: StudentSchema
 	* grade: Integer
+  * timestamp: date
 
 ## Class
 	* subject: String
 	* examGrades: Array
 		* An array of Exams
+  * exam: ExamSchema
+  * student: StudentSchema
+  * timestamp: date
+
 
 ## Semester
-  * student: StudentSchema
 	* term: Integer
 	* classes: Array
 		* An array of Classes
-  
+  * timestamp: date
+
+Advanced:
+
+1.
+
+## Product
+  * department: DepartmentSchema
+  * SKU: string
+  * price: Integer
+  * name: string
+  * description: string
+  * parentCompany: string
+  * stock: Integer
+  * timestamp: date
 
 
+## Department
+  * revenue: Array
+    * Quarterly or monthly or yearly revenues
+  * inventory: Array
+     * of ProductSchema instances
+  * name: string
+  * transactions: Array
+    * of ReceiptSchema instances
+  * timestamp: date
+
+## Receipt
+  * department: DepartmentSchema
+  * product: ProductSchema
+  * transactionID: string
+  * timestamp: date
