@@ -73,3 +73,30 @@ Intermediate
   * price: Integer
   * reviews: Array
   * timestamp: Date
+
+
+2. 
+
+## Student
+	* name: String
+	* password: String
+	* email
+	* address
+
+## Exam
+	* student: StudentSchema
+	* grade: Integer
+
+## Class
+	* subject: String
+	* examGrades: Array
+		* An array of Exams
+
+## Semester
+  * student: StudentSchema
+	* term: Integer
+	* classes: Array
+		* An array of Classes
+  
+
+
